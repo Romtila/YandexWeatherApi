@@ -10,6 +10,7 @@ public static class YandexWeatherApiDependencyInjectionExtensions
         var options = new YandexWeatherOptions();
         configureOptions(options);
         services.AddSingleton<IYandexWeatherService, YandexWeatherService>();
+        return services;
     }
 }
 

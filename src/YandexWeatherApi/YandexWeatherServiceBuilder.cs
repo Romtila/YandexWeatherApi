@@ -40,7 +40,7 @@ public class YandexWeatherServiceBuilder
     private void Validate()
     {
         if (string.IsNullOrEmpty(_apiKey))
-            throw new ValidationException()
+            throw new ValidationException();
     }
 
     private class ClientFactory : IHttpClientFactory
